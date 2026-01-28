@@ -5,7 +5,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/data")
+    fetch("http://20.205.26.236:5000/data")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Backend not responding");
